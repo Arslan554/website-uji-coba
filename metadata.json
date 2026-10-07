@@ -1,0 +1,6 @@
+{
+  "name": "Euphoria X E-11 — MAN 1 Surakarta",
+  "description": "Portal digital resmi kelas X E-11 MAN 1 Surakarta: Absensi, Denah Tempat Duduk 3D, Pembagian Kelompok, Jadwal & Alarm, Spin Wheel, Polling, Tugas, dan Dokumentasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

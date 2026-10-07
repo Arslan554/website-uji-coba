@@ -1,0 +1,229 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F7F1E2;
+  --bg2: #F0E7D1;
+  --surface: #FCF8EC;
+  --surface2: #F4EBD5;
+  --surface3: #EBE0C4;
+  --line: rgba(58, 42, 16, 0.11);
+  --line-strong: rgba(58, 42, 16, 0.20);
+  --gold: #A97D0C;
+  --gold-soft: #C79A2E;
+  --gold-dim: #8A6A1F;
+  --jade: #286B56;
+  --jade-bg: #E2F0E8;
+  --jade-line: #BEDDCC;
+  --rust: #A0512A;
+  --rust-bg: #F5E1CC;
+  --rose: #8A4356;
+  --rose-bg: #F6DEE5;
+  --cream: #2E2414;
+  --muted: #6C5C42;
+  --muted2: #8C7B5C;
+  --ok: #2E7D53;
+  --warn: #AE4A2C;
+  --accent-rgb: 169, 125, 12;
+}
+
+[data-scheme="sage"] {
+  --bg: #F2F1E4; --bg2: #E8E6D1; --surface: #FBFAF2; --surface2: #F1EFDC; --surface3: #E5E3C7;
+  --line: rgba(38, 55, 40, 0.10); --line-strong: rgba(38, 55, 40, 0.19);
+  --gold: #5F7A52; --gold-soft: #82A16E; --gold-dim: #4A6140;
+  --jade: #3D6B6E; --jade-bg: #DEEAEA; --jade-line: #BBD6D7;
+  --rust: #B06239; --rust-bg: #F3E1D2;
+  --rose: #94586A; --rose-bg: #F1DEE3;
+  --cream: #232A1E; --muted: #5E6852; --muted2: #82896F;
+  --ok: #3D7A52; --warn: #B04A2C;
+  --accent-rgb: 95, 122, 82;
+}
+
+[data-scheme="rosewood"] {
+  --bg: #F7ECE6; --bg2: #EFDDD3; --surface: #FCF4EF; --surface2: #F3E3DA; --surface3: #EAD3C4;
+  --line: rgba(74, 30, 30, 0.10); --line-strong: rgba(74, 30, 30, 0.19);
+  --gold: #9C3F49; --gold-soft: #C06770; --gold-dim: #7E2E37;
+  --jade: #3A5A73; --jade-bg: #DEE7ED; --jade-line: #B9CBD9;
+  --rust: #A8632E; --rust-bg: #F2E2CC;
+  --rose: #7C3E52; --rose-bg: #F0DEE4;
+  --cream: #2E1B1C; --muted: #6E4E4F; --muted2: #8C6E6C;
+  --ok: #3E7A55; --warn: #A8432C;
+  --accent-rgb: 156, 63, 73;
+}
+
+[data-scheme="ocean"] {
+  --bg: #EAF4F5; --bg2: #DCEDEE; --surface: #F8FCFC; --surface2: #E9F4F4; --surface3: #D9ECEC;
+  --line: rgba(15, 64, 72, 0.10); --line-strong: rgba(15, 64, 72, 0.19);
+  --gold: #1F7A8C; --gold-soft: #3D9BAC; --gold-dim: #175F6D;
+  --jade: #2E7D5B; --jade-bg: #DFF0E6; --jade-line: #BEDDCC;
+  --rust: #C1793D; --rust-bg: #F5E4CE;
+  --rose: #B0567A; --rose-bg: #F5DEE9;
+  --cream: #0F2A2E; --muted: #4E6E72; --muted2: #6F8F92;
+  --ok: #2E7D53; --warn: #B0472C;
+  --accent-rgb: 31, 122, 140;
+}
+
+[data-scheme="lavender"] {
+  --bg: #F3EFFA; --bg2: #E9E1F5; --surface: #FBF9FE; --surface2: #EFE9F8; --surface3: #E2D8F0;
+  --line: rgba(60, 40, 90, 0.10); --line-strong: rgba(60, 40, 90, 0.19);
+  --gold: #6C4FA0; --gold-soft: #8B6FC0; --gold-dim: #553B85;
+  --jade: #3D7A6E; --jade-bg: #DFEEE8; --jade-line: #BEDCD3;
+  --rust: #B06A4A; --rust-bg: #F2E1D3;
+  --rose: #A2497E; --rose-bg: #F2DEEA;
+  --cream: #2A2140; --muted: #66597E; --muted2: #88799E;
+  --ok: #3E7A55; --warn: #A8432C;
+  --accent-rgb: 108, 79, 160;
+}
+
+[data-scheme="karang"] {
+  --bg: #FBEEE6; --bg2: #F5DFD0; --surface: #FEF7F2; --surface2: #F8E9DE; --surface3: #F0D8C4;
+  --line: rgba(120, 50, 20, 0.10); --line-strong: rgba(120, 50, 20, 0.19);
+  --gold: #C1602E; --gold-soft: #DE8752; --gold-dim: #9C4A22;
+  --jade: #3D7A5E; --jade-bg: #DEEDE3; --jade-line: #BEDACB;
+  --rust: #B06A2E; --rust-bg: #F2DFC7;
+  --rose: #B04F5A; --rose-bg: #F2DDE0;
+  --cream: #3A2013; --muted: #7E5A44; --muted2: #9C7A62;
+  --ok: #3E7A55; --warn: #A8432C;
+  --accent-rgb: 193, 96, 46;
+}
+
+[data-scheme="nila"] {
+  --bg: #ECEEFA; --bg2: #DEE1F3; --surface: #F8F9FE; --surface2: #E7E9F8; --surface3: #D9DCF0;
+  --line: rgba(30, 30, 90, 0.10); --line-strong: rgba(30, 30, 90, 0.19);
+  --gold: #4A4FA0; --gold-soft: #6C70C0; --gold-dim: #383C85;
+  --jade: #3D7A6E; --jade-bg: #DFEEE8; --jade-line: #BEDCD3;
+  --rust: #B06A4A; --rust-bg: #F2E1D3;
+  --rose: #7A4FA2; --rose-bg: #E9DEF2;
+  --cream: #211F40; --muted: #59597E; --muted2: #79799E;
+  --ok: #3E7A55; --warn: #A8432C;
+  --accent-rgb: 74, 79, 160;
+}
+
+/* Dark mode variations */
+html[data-mode="dark"] {
+  --bg: #1B140A; --bg2: #241B0E; --surface: #2A2011; --surface2: #332614; --surface3: #3D2D18;
+  --line: rgba(255, 220, 150, 0.10); --line-strong: rgba(255, 220, 150, 0.18);
+  --gold: #E8C971; --gold-soft: #F0D98F; --gold-dim: #C9A227;
+  --jade: #6FA995; --jade-bg: #1E332B; --jade-line: #2F4A3E;
+  --rust: #E0916A; --rust-bg: #3A2416;
+  --rose: #D98CA0; --rose-bg: #3A2028;
+  --cream: #F7EFDD; --muted: #C7B48C; --muted2: #A6926A;
+  --ok: #6FCF97; --warn: #E0916A;
+  --accent-rgb: 232, 201, 113;
+}
+
+html[data-mode="dark"][data-scheme="sage"] {
+  --bg: #101B12; --bg2: #16241A; --surface: #1B2B1F; --surface2: #213525; --surface3: #293F2D;
+  --line: rgba(180, 220, 170, 0.10); --line-strong: rgba(180, 220, 170, 0.18);
+  --gold: #8FBF7A; --gold-soft: #A9D493; --gold-dim: #6C9C58;
+  --jade: #5FA3A6; --jade-bg: #173030; --jade-line: #2A4747;
+  --rust: #D6935E; --rust-bg: #3A2716;
+  --rose: #D98CA5; --rose-bg: #3A2028;
+  --cream: #EAF3E4; --muted: #A9C29D; --muted2: #87A17C;
+  --ok: #7BD08F; --warn: #E0916A;
+  --accent-rgb: 143, 191, 122;
+}
+
+html[data-mode="dark"][data-scheme="rosewood"] {
+  --bg: #1E0F13; --bg2: #28131A; --surface: #301721; --surface2: #3A1B27; --surface3: #45212E;
+  --line: rgba(240, 180, 190, 0.10); --line-strong: rgba(240, 180, 190, 0.18);
+  --gold: #E08296; --gold-soft: #EAA0B0; --gold-dim: #C0576D;
+  --jade: #6FA995; --jade-bg: #1B302A; --jade-line: #2C4640;
+  --rust: #E0916A; --rust-bg: #3A2416;
+  --rose: #F0A8BC; --rose-bg: #3D212A;
+  --cream: #FBEAEE; --muted: #D0A0AC; --muted2: #AE808C;
+  --ok: #7BD08F; --warn: #E0916A;
+  --accent-rgb: 224, 130, 150;
+}
+
+html[data-mode="dark"][data-scheme="ocean"] {
+  --bg: #081820; --bg2: #0D222B; --surface: #112B35; --surface2: #15343F; --surface3: #1A3E4A;
+  --line: rgba(150, 220, 230, 0.10); --line-strong: rgba(150, 220, 230, 0.18);
+  --gold: #5FCBDC; --gold-soft: #84DAE8; --gold-dim: #39A6B8;
+  --jade: #7AC79A; --jade-bg: #123024; --jade-line: #234B3A;
+  --rust: #E0A66A; --rust-bg: #3A2A16;
+  --rose: #E08CB0; --rose-bg: #3A2030;
+  --cream: #E8F7FA; --muted: #9FC7CF; --muted2: #7CA6AE;
+  --ok: #7BD08F; --warn: #E0916A;
+  --accent-rgb: 95, 203, 220;
+}
+
+html[data-mode="dark"][data-scheme="lavender"] {
+  --bg: #160F24; --bg2: #1E152F; --surface: #241A38; --surface2: #2B2042; --surface3: #33274D;
+  --line: rgba(210, 190, 240, 0.10); --line-strong: rgba(210, 190, 240, 0.18);
+  --gold: #B08CE0; --gold-soft: #C6A8ED; --gold-dim: #8F68C4;
+  --jade: #6FA995; --jade-bg: #1A2E28; --jade-line: #2B453C;
+  --rust: #E0A66A; --rust-bg: #3A2A16;
+  --rose: #E08CD0; --rose-bg: #3A2038;
+  --cream: #F3EBFC; --muted: #BBA6D6; --muted2: #9880B4;
+  --ok: #7BD08F; --warn: #E0916A;
+  --accent-rgb: 176, 140, 224;
+}
+
+html[data-mode="dark"][data-scheme="karang"] {
+  --bg: #20120A; --bg2: #2B180E; --surface: #331D12; --surface2: #3D2516; --surface3: #472C1A;
+  --line: rgba(255, 190, 150, 0.10); --line-strong: rgba(255, 190, 150, 0.18);
+  --gold: #E89B6A; --gold-soft: #F0B588; --gold-dim: #C97645;
+  --jade: #6FA995; --jade-bg: #1E332B; --jade-line: #2F4A3E;
+  --rust: #E0916A; --rust-bg: #3A2416;
+  --rose: #D98CA0; --rose-bg: #3A2028;
+  --cream: #F9E9DD; --muted: #C7A48C; --muted2: #A6826A;
+  --ok: #6FCF97; --warn: #E0916A;
+  --accent-rgb: 232, 155, 106;
+}
+
+html[data-mode="dark"][data-scheme="nila"] {
+  --bg: #0E0F22; --bg2: #14162E; --surface: #191C38; --surface2: #1F2242; --surface3: #26294D;
+  --line: rgba(180, 180, 240, 0.10); --line-strong: rgba(180, 180, 240, 0.18);
+  --gold: #8C90E0; --gold-soft: #A6A9EC; --gold-dim: #6468C4;
+  --jade: #6FA995; --jade-bg: #1A2E28; --jade-line: #2B453C;
+  --rust: #E0A66A; --rust-bg: #3A2A16;
+  --rose: #C08CE0; --rose-bg: #302040;
+  --cream: #EAEAFC; --muted: #A6A6D6; --muted2: #8484B4;
+  --ok: #7BD08F; --warn: #E0916A;
+  --accent-rgb: 140, 144, 224;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--cream);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  background-image: 
+    radial-gradient(circle at 12% 0%, rgba(var(--accent-rgb), 0.10) 0, transparent 42%),
+    radial-gradient(circle at 105% 22%, rgba(40, 107, 86, 0.10) 0, transparent 46%),
+    radial-gradient(circle at -5% 78%, rgba(138, 67, 86, 0.08) 0, transparent 42%);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
